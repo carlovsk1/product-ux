@@ -11,6 +11,8 @@ Two failures kill products, and neither is visual. **Framing** decides whether t
 
 Fix the framing and the craft before touching the pixels. A prettier empty form is still an empty form.
 
+**Subtract before you add.** Every element must earn its place by serving the user's task. What doesn't serve it isn't neutral — it's noise that buries what does, adds one more thing to decide, and dilutes the one action that matters. When in doubt, cut it. The test is *function*, not quantity: a tooltip, a default, or a loop that confirms an action all earn their place; a decorative chart, a second CTA competing with the first, filler copy, and a field you never read do not. Removing the useless is how you protect the useful — this is not license to strip what does a job.
+
 ## When to Use
 
 - Conversion surfaces: signup, onboarding, forms with 3+ fields, paywalls, upgrade prompts, pricing, checkout, trials.
@@ -64,6 +66,7 @@ Any "yes" is a leak:
 8. Is a rare action taking permanent space — or a primary action buried behind a hover?
 9. Are the hidden layers missing: hover, empty, loading, error states, and tooltips on every icon and ambiguous label?
 10. In a repetition product, does completing the loop feel like nothing? In a high-stakes one, does the craft undercut the trust you're asking for?
+11. Is anything on the screen there without a job — a decorative element, a competing CTA, filler copy, a field nobody reads? Cut it.
 
 ## Never Trade Accessibility for Conversion
 
