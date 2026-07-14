@@ -38,6 +38,18 @@ Not for: internal throwaway tools, or flows where the user is already committed 
 
 **The invisible UI is half the product.** What you can't see is as much of the interface as what you can: hover states, copy-on-hover chips, comment indicators, empty states, loading states, drawers, tooltips. Beginners ship only the visible layer, then wonder why a dense screen feels broken. Assume the user won't decode your icons and won't understand your ambiguous labels — tooltips are the single most common omission on amateur dashboards. New functionality usually doesn't need a new page; it needs a hidden layer thought through properly.
 
+## Part 3 — Feel (do they come back?)
+
+Delight is not decoration, but it only pays in two specific places. Everywhere else it's a distraction from Parts 1 and 2.
+
+**Products built on repetition** (streaks, check-ins, journaling, habit logging): every completion needs emotional feedback, not a green checkmark. The user must *see* the thing they're building — momentum made visible is the product. A confirmation that merely confirms is a wasted moment.
+
+**High-stakes domains** (fintech, crypto, health, insurance): polish is a trust signal, not a finish. A janky transition in a wallet reads as "unsafe with my money" — the user can't audit your security, so they judge it by the only proxy they have. Here, motion and craft in onboarding and security flows *are* the feature.
+
+Scope: what the delight is *for* belongs here. How to build it — easing, shadows, typography, animation timing — is a visual-polish concern and lives in a polish skill, not this one.
+
+Caution: delight cannot rescue a badly framed flow. A charming mascot on a form that asks before it gives is still a form that asks before it gives. And beware the famous case studies — the products credited to "delight" also shipped new features, curriculum and marketing in the same window. Correlation gets sold as causation in this space constantly.
+
 ## Review Checklist
 
 Any "yes" is a leak:
@@ -51,6 +63,7 @@ Any "yes" is a leak:
 7. Is the data forced into a shape it doesn't want (a table for a timeline, free text for an enum, left-aligned numbers)?
 8. Is a rare action taking permanent space — or a primary action buried behind a hover?
 9. Are the hidden layers missing: hover, empty, loading, error states, and tooltips on every icon and ambiguous label?
+10. In a repetition product, does completing the loop feel like nothing? In a high-stakes one, does the craft undercut the trust you're asking for?
 
 ## Never Trade Accessibility for Conversion
 

@@ -35,6 +35,7 @@ Point it at a screen and it runs nine questions. Any "yes" is a leak:
 7. Is the data forced into a shape it doesn't want (a table for a timeline, free text for an enum, left-aligned numbers)?
 8. Is a rare action taking permanent space — or a primary action buried behind a hover?
 9. Are the hidden layers missing: hover, empty, loading, error states, and tooltips on every icon and ambiguous label?
+10. In a repetition product, does completing the loop feel like nothing? In a high-stakes one, does the craft undercut the trust you're asking for?
 
 ## On dark patterns
 
