@@ -1,6 +1,6 @@
 ---
 name: product-ux
-description: Use when designing or reviewing any product UI — onboarding, signup, forms, paywalls, pricing, checkout, dashboards, tables, admin panels, data views — or when the concern is drop-off, low conversion, users abandoning a flow, a cluttered dashboard, a table that feels unusable, or "it looks fine but nobody uses it".
+description: Use when designing or reviewing any product UI — onboarding, signup, forms, paywalls, pricing, checkout, dashboards, tables, admin panels, data views — or when the concern is drop-off, low conversion, users abandoning a flow, a cluttered dashboard, a table that feels unusable, or "it looks fine but nobody uses it". Also when adding gamification, streaks, badges, points, leaderboards, habit loops, or any retention mechanic meant to bring users back.
 ---
 
 # Product UX
@@ -50,6 +50,23 @@ Delight is not decoration, but it only pays in two specific places. Everywhere e
 
 Scope: what the delight is *for* belongs here. How to build it — easing, shadows, typography, animation timing — is a visual-polish concern and lives in a polish skill, not this one.
 
+### Retention mechanics: pick the engine
+
+Points, badges, and leaderboards are both the most-added and the most-retired mechanics in product history — LinkedIn's Top Voice badges, Foursquare's mayorships, and Google News badges were all killed for rewarding presence over the behavior the product needed. They are the scoreboard of a game, not the game. Before adding any mechanic, choose the emotional engine the loop runs on:
+
+| Engine | How it works | Use when |
+|---|---|---|
+| **Completion drive** | An open loop demands closure — a 90%-filled ring, 2 of 3 questions answered. The pull is toward finishing, and it resets fresh each day. | Default. The daily unit has a natural "done" state. Apple's rings drove measured real-world behavior change with no points at all. |
+| **Anticipation** | A reward is coming and its size is unknown. Reveal one item at a time — each reveal is its own event. | There's something to reveal: an insight, a weekly reading, a variable payoff. Recharges instead of burning out. |
+| **Fear of loss** (streaks) | The user protects what they built. It works — then shifts from "I want to" toward "I can't miss a day" the longer it runs, and it is the design regulators now target. | Only with the escape hatch built in: the user chooses the goal level, can pause or repair, and a miss forgives by design. A streak the user can't pause, influence, or escape is the flagged pattern. |
+
+Whichever engine you pick:
+
+- **One engine, not a stack.** Mechanic richness follows an S-curve — past the peak, each added mechanic *reverses* engagement. The fully-gamified case study (quests, HP, and stats bolted onto daily tasks) produced counterproductive effects in 100% of studied users: they managed the game instead of doing the work. One engine, plus at most one competence or social layer.
+- **Signal competence, not presence.** Gamification reliably makes users feel recognized and connected, and does almost nothing for competence — the need most tied to long-term intrinsic motivation. Include one mechanic that proves the user got better at the real thing: a rating that moves, a personal record auto-flagged, a count that stands for real completed work (a 100-ride badge that means 100 actual rides). A mechanic that only proves they opened the app is theater.
+- **If competition, make it winnable.** One global leaderboard is a podium for three users and a demotivator for everyone else. Many hyper-local competitions — this hill, this cohort, this week — are winnable, and winnability, not the leaderboard, is what predicts competitive motivation.
+- **Measure the behavior, not the app time.** The mechanic exists to drive the real-world behavior: runs logged, nights journaled, lessons finished. Engagement rising while the behavior doesn't is the definition of engagement theater.
+
 Caution: delight cannot rescue a badly framed flow. A charming mascot on a form that asks before it gives is still a form that asks before it gives. And beware the famous case studies — the products credited to "delight" also shipped new features, curriculum and marketing in the same window. Correlation gets sold as causation in this space constantly.
 
 ## Review Checklist
@@ -67,6 +84,8 @@ Any "yes" is a leak:
 9. Are the hidden layers missing: hover, empty, loading, error states, and tooltips on every icon and ambiguous label?
 10. In a repetition product, does completing the loop feel like nothing? In a high-stakes one, does the craft undercut the trust you're asking for?
 11. Is anything on the screen there without a job — a decorative element, a competing CTA, filler copy, a field nobody reads? Cut it.
+12. Is the retention loop running on fear of loss without an escape hatch — no user-chosen goal, no pause, no repair? Or is more than one engine stacked?
+13. Do all the mechanics prove presence (opens, streaks) while none proves competence — that the user got better at the real thing?
 
 ## Never Trade Accessibility for Conversion
 
@@ -78,9 +97,10 @@ Loss aversion makes the exit *heavier*, never *harder to reach*. Shrinking a hit
 - **Confusing dark patterns with these principles.** Fake countdowns and invented scarcity are lies. Loss aversion works only when the loss is *real*.
 - **Decorative color on a dashboard.** On a landing page you can get away with it. On a data view, color that doesn't encode meaning is noise.
 - **Fixing the pixels instead of the framing.** Radius and shadows don't fix a screen that asks before it gives.
+- **Porting Part 1's loss aversion into the retention loop.** Loss framing converts a *decision*; as a daily engine it curdles into obligation and a fear ping at 11pm. Retention runs on closure or anticipation first — fear only with the escape hatch built in.
 
 ## Research
 
-Choice overload (Iyengar & Lepper), endowed progress (Nunes & Drèze), reciprocity (Cialdini), the IKEA effect (Norton, Mochon & Ariely), loss aversion (Kahneman & Tversky), the contrast effect.
+Choice overload (Iyengar & Lepper), endowed progress (Nunes & Drèze), reciprocity (Cialdini), the IKEA effect (Norton, Mochon & Ariely), loss aversion (Kahneman & Tversky), the contrast effect. On retention mechanics: the S-curve of gamification richness (Frontiers in Psychology, 2025), streak obligation (The Decision Lab; Snapchat adolescent study, 2023), the competence gap (Springer Nature meta-analysis, 2024), winnability in competition (ScienceDirect, 2022), and the Gestalt principle of closure.
 
 The percentages here are secondhand and unverified against the original papers. Use them to pick a direction, never to justify a decision in writing — check the primary source first.
