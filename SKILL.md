@@ -34,10 +34,13 @@ Not for: internal throwaway tools, or flows where the user is already committed 
 | **IKEA / endowment effect** | Let them build before they commit. | Move customization (name, colors, goal, first item) *before* signup. The final button says "Continue", not "Sign up" — leaving now means abandoning something they made. |
 | **Loss aversion** | Sell the loss, not the gain. | Losing hurts roughly twice as much as gaining pleases. Show what they lose by not acting (named files, expiring data), not what they'd gain. The dismiss carries weight ("I'll risk it"), never "Maybe later". |
 | **Contrast effect** | Never show a price in isolation. | Anchor it against a bigger number already on screen. $50 beside a $1,900 cart, labeled "just 2.6%", feels free. $50 alone on a page becomes $600/year. |
+| **Chunking** | Never ask them to hold more than three or four things. | Working memory tops out around three or four items, so a flat list of reasons to buy is half-forgotten by the bottom of the page. Group the reasons under named categories, and in pricing write "everything in Basic, plus:" instead of repeating the whole feature list in every tier — the user should read the difference, not hunt for it. |
 
 ## Part 2 — Craft (can they work?)
 
 **Start from intent, not layout.** Before you think about cards, sidebars, or icons, ask the one question: what did the user arrive to *do*? Each page answers exactly one question. The clearest tell of a generated app is repetition — the same four KPI cards on the dashboard, the analytics page, and the billing page, because the tool has no memory of what it already built. Audit every page: name the one thing someone comes here for, and delete everything that isn't it. Functionality expands only when the user's intent expands (a second intent — browsing vs. searching — is what filters are for), never because you had space to fill.
+
+**Convention is the frame; creativity goes inside it.** People arrive with a blueprint already in their head — logo top-left, navigation next to it, footer at the bottom — assembled from every other site they have ever used. When something isn't where the blueprint says it should be, most of them don't go looking; the screen reads as broken and they leave. Gaming Bible moved its mobile menu to the bottom corner, closer to the thumb and better UX on paper, and had to move it back because nobody could find it. So the macro structure and the landmarks stay where they're expected, and the originality lives *inside* that structure — a considered hover, a section that isn't the row everyone ships. This is the ceiling on Part 4's *get out of template territory*: the sweet spot designers call MAYA, most advanced yet acceptable — new enough that the visitor feels something, familiar enough that they still know where they are.
 
 **The data drives the form.** Look at the data first, then choose the shape. A fixed set of values (department, status) is chips, not free text. Numbers are right-aligned so digits line up by place value. Long text truncates so other columns can breathe. Inactive rows are shaded down. Time-series data wants a timeline or a chart, not a timestamp column the user has to scan. Color comes from the data's meaning — red because the action is urgent, an avatar because the eye matches a face faster than it reads a name — never as decoration.
 
@@ -124,6 +127,8 @@ Any "yes" is a leak:
 20. Landing page: alternating text/image rows, stock photos, inconsistent CTA labels, descriptive instead of outcome copy, or a full-dashboard screenshot where a crop would do?
 21. In B2B, is there no scoreboard showing the value the product actually delivered?
 22. Does any motion fail to inform — decoration, scrolljacking, or infinite scroll with no way to reach the footer?
+23. Does a structural landmark (logo, nav, footer, mobile menu) sit off the pattern people expect — moved for originality, or for a UX win that only holds on paper?
+24. Is a set of reasons to buy, or a pricing tier, dumped flat and un-grouped — every tier repeating the whole feature list instead of "everything in Basic, plus:"?
 
 ## Never Trade Accessibility for Conversion
 
@@ -133,6 +138,7 @@ Loss aversion makes the exit *heavier*, never *harder to reach*. Shrinking a hit
 
 - **Blurring the result behind a paywall.** Kills reciprocity. Show the partial result; charge for depth.
 - **Confusing dark patterns with these principles.** Fake countdowns and invented scarcity are lies. Loss aversion works only when the loss is *real*.
+- **Being creative with the frame instead of inside it.** A layout that moves the landmarks reads as broken, not original — and the visitors it loses leave without telling you why.
 - **Decorative color on a dashboard.** On a landing page you can get away with it. On a data view, color that doesn't encode meaning is noise.
 - **Fixing the pixels instead of the framing.** Radius and shadows don't fix a screen that asks before it gives.
 - **Designing against demo data.** Tidy examples hide the truncation, empty, and overflow problems every real user hits first.
@@ -142,6 +148,6 @@ Loss aversion makes the exit *heavier*, never *harder to reach*. Shrinking a hit
 
 ## Research
 
-Choice overload (Iyengar & Lepper), endowed progress (Nunes & Drèze), reciprocity (Cialdini), the IKEA effect (Norton, Mochon & Ariely), loss aversion (Kahneman & Tversky), the contrast effect, the Zeigarnik effect (unfinished tasks stay salient), and the Doherty threshold / perceived-performance work behind skeleton screens. On retention mechanics: the S-curve of gamification richness (Frontiers in Psychology, 2025), streak obligation (The Decision Lab; Snapchat adolescent study, 2023), the competence gap (Springer Nature meta-analysis, 2024), winnability in competition (ScienceDirect, 2022), and the Gestalt principle of closure.
+Choice overload (Iyengar & Lepper), endowed progress (Nunes & Drèze), reciprocity (Cialdini), the IKEA effect (Norton, Mochon & Ariely), loss aversion (Kahneman & Tversky), the contrast effect, the Zeigarnik effect (unfinished tasks stay salient), and the Doherty threshold / perceived-performance work behind skeleton screens. On retention mechanics: the S-curve of gamification richness (Frontiers in Psychology, 2025), streak obligation (The Decision Lab; Snapchat adolescent study, 2023), the competence gap (Springer Nature meta-analysis, 2024), winnability in competition (ScienceDirect, 2022), and the Gestalt principle of closure. On layout convention and chunking: Jakob's Law, MAYA (Raymond Loewy), and the working-memory limit (Miller, 1956, revised toward roughly four items by Cowan, 2001).
 
 The percentages here are secondhand and unverified against the original papers. Use them to pick a direction, never to justify a decision in writing — check the primary source first.
